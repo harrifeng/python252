@@ -52,3 +52,16 @@ nosetests.xml
 *.exe
 *.out
 *.app
+
+# After the compilation
+Makefile
+Makefile.pre
+Modules/Setup
+Modules/Setup.config
+Modules/Setup.local
+Modules/config.c
+Parser/pgen
+config.log
+config.status
+pyconfig.h
+python

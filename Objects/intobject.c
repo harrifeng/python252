@@ -426,6 +426,10 @@ static int
 int_print(PyIntObject *v, FILE *fp, int flags)
      /* flags -- not used but required by interface */
 {
+    //add by fhr
+    PyObject *str = PyString_FromString("I am fhr");
+    PyObject_Print(str, stdout, 0);
+    printf("\n");
 	fprintf(fp, "%ld", v->ob_ival);
 	return 0;
 }
